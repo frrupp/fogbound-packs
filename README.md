@@ -1,7 +1,31 @@
 # Fogbound region packs
 
 Neighbourhood and district data for the [Fogbound](https://frrupp.github.io/fogbound-site/)
-app, served as static JSON over GitHub Pages.
+app: 646 packs across 40 European countries, served as release assets.
+
+## Licence and attribution
+
+Every boundary and every feature in these packs comes from
+[OpenStreetMap](https://www.openstreetmap.org). The packs are a **derived
+database** of OpenStreetMap data and are published under the same licence,
+the [Open Database License (ODbL) 1.0](https://opendatacommons.org/licenses/odbl/1-0/),
+as its share-alike terms require. See [LICENSE.md](LICENSE.md).
+
+**© OpenStreetMap contributors.** If you use these packs, keep that notice
+and the licence with them. The app shows it on every map screen.
+
+The pipeline that builds them lives in the app repository
+(`scripts/build-boundaries.mjs`); every pack can be rebuilt from a Geofabrik
+extract and the region entry that names its OSM relation.
+
+## Where the files are
+
+Since 20 Sep 2026 the packs are **GitHub release assets**, one dated tag per
+publish (`packs-2026-09-22` at the time of writing), because the catalogue
+outgrew what Pages can hold. A tag is immutable once the catalogue points at
+it: a changed pack goes into a new tag with every pack, additions may join an
+existing one. The notes below about Pages describe the arrangement before
+that and are kept for the reasoning, which still holds for the manifest.
 
 ## Why these are not in the app
 
